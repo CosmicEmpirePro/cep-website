@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Cosmic Empire Productions for game and film composition, arrangement, orchestration, and notation.">
+  <title>Contact | Cosmic Empire Productions</title>
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.svg" alt="">
+        <div class="brand-text">Cosmic Empire Productions</div>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="section-inner reveal">
+        <p class="eyebrow">Contact</p>
+        <h1>Start a conversation</h1>
+        <p>Tell us about your film, game, or media project. The form opens your email app with a ready-to-send message.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner contact-layout">
+        <div class="contact-info reveal">
+          <p>
+            Prefer email directly? Reach Cosmic Empire Productions at:
+          </p>
+          <a class="contact-email" href="mailto:cosmicempireproductions@gmail.com">
+            cosmicempireproductions@gmail.com
+          </a>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@email.com">
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" placeholder="Game score, film cue, notation…">
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Project type, timeline, and anything we should hear first."></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Open email draft</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="year">2026</span> Cosmic Empire Productions</p>
+      <div class="footer-links">
+        <a href="mailto:cosmicempireproductions@gmail.com">cosmicempireproductions@gmail.com</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

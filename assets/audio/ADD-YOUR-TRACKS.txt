@@ -1,0 +1,30 @@
+PORTFOLIO AUDIO — PACKS
+=======================
+
+Keep full-quality WAV files. Use simple filenames (hyphens, no spaces):
+
+  assets/audio/rpg-game/
+    Title.wav
+    Open-Fields.wav
+    Tinkerers-Workshop.wav
+    Ride.wav
+    Antagonist-Introduction.wav
+    Boss-Fight.wav
+    Boss-Fight-Longer.wav
+
+Display titles on the page can still have spaces ("Open Fields").
+
+PREVIEWING LOCALLY
+------------------
+Because these WAVs are large, use the included preview server
+(double-click START-PREVIEW.bat), then open:
+
+  http://127.0.0.1:8770/portfolio.html
+
+That server supports concurrent streams + HTTP Range requests
+so tracks do not block each other.
+
+TO ADD ANOTHER PACK
+1. Create a folder under assets/audio/
+2. Drop WAV files with hyphenated names
+3. Copy a <section class="pack"> in portfolio.html and update paths

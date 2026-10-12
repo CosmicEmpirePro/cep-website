@@ -1,0 +1,10 @@
+# OS / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.tmp
+.vscode/
+.idea/
+
+# Local preview helpers (optional keep — scripts are tracked)
+# start-preview.ps1 and START-PREVIEW.bat are intentional site tools

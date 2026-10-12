@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Cosmic Empire Productions">
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="#111113"/>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="none" stroke="#b8a890" stroke-width="1.25"/>
+  <text x="32" y="38" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#eceae6" letter-spacing="2">CEP</text>
+</svg>
