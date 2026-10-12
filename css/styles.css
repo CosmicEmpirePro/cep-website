@@ -24,24 +24,24 @@
 
 @font-face {
   font-family: "Syne";
-  src: url("../assets/fonts/syne-500.woff2") format("woff2");
+  src: url("../assets/fonts/syne-500.woff2?v=2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
   /* Syne ink extends past default metrics — keep descenders visible */
-  ascent-override: 92%;
-  descent-override: 32%;
+  ascent-override: 90%;
+  descent-override: 40%;
   line-gap-override: 0%;
 }
 
 @font-face {
   font-family: "Syne";
-  src: url("../assets/fonts/syne-700.woff2") format("woff2");
+  src: url("../assets/fonts/syne-700.woff2?v=2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  ascent-override: 92%;
-  descent-override: 32%;
+  ascent-override: 90%;
+  descent-override: 40%;
   line-gap-override: 0%;
 }
 
@@ -60,7 +60,7 @@
   --line-strong: rgba(236, 234, 230, 0.16);
   --font-display: "Syne", "Segoe UI", Candara, sans-serif;
   --font-body: "Outfit", "Segoe UI", Candara, sans-serif;
-  --display-leading: 1.4;
+  --display-leading: 1.5;
   --nav-h: 4rem;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --radius: 0.5rem;
