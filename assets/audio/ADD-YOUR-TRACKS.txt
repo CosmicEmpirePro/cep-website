@@ -9,8 +9,7 @@ Keep full-quality WAV files. Use simple filenames (hyphens, no spaces):
     Tinkerers-Workshop.wav
     Ride.wav
     Antagonist-Introduction.wav
-    Boss-Fight.wav
-    Boss-Fight-Longer.wav
+    Boss-Fight-Longer.wav  (shown on site as "Boss Fight")
 
 Display titles on the page can still have spaces ("Open Fields").
 
