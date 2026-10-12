@@ -28,6 +28,10 @@
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+  /* Syne ink extends past default metrics — keep descenders visible */
+  ascent-override: 92%;
+  descent-override: 32%;
+  line-gap-override: 0%;
 }
 
 @font-face {
@@ -36,6 +40,9 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
+  ascent-override: 92%;
+  descent-override: 32%;
+  line-gap-override: 0%;
 }
 
 :root {
@@ -53,6 +60,7 @@
   --line-strong: rgba(236, 234, 230, 0.16);
   --font-display: "Syne", "Segoe UI", Candara, sans-serif;
   --font-body: "Outfit", "Segoe UI", Candara, sans-serif;
+  --display-leading: 1.4;
   --nav-h: 4rem;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --radius: 0.5rem;
@@ -76,10 +84,18 @@ body {
   font-weight: 400;
   color: var(--paper);
   background: var(--ink);
-  line-height: 1.65;
+  line-height: 1.7;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow-x: clip;
   -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3,
+.hero-brand,
+.brand-text {
+  font-family: var(--font-display);
+  line-height: var(--display-leading);
+  overflow: visible;
 }
 
 img {
@@ -148,7 +164,7 @@ textarea {
   font-size: 0.92rem;
   font-weight: 700;
   letter-spacing: -0.02em;
-  line-height: 1.3;
+  line-height: var(--display-leading);
   white-space: nowrap;
 }
 
@@ -277,11 +293,11 @@ textarea {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: clamp(2.5rem, 7.5vw, 5rem);
-  line-height: 1.12;
-  letter-spacing: -0.045em;
+  line-height: var(--display-leading);
+  letter-spacing: -0.03em;
   margin-bottom: 1.15rem;
   overflow: visible;
-  padding-bottom: 0.06em;
+  padding-bottom: 0.12em;
   opacity: 0;
   transform: translateY(24px);
   animation: rise 1s var(--ease) 0.15s forwards;
@@ -388,17 +404,17 @@ textarea {
   font-family: var(--font-display);
   font-size: clamp(1.75rem, 3.5vw, 2.45rem);
   font-weight: 700;
-  line-height: 1.3;
+  line-height: var(--display-leading);
   letter-spacing: -0.03em;
   margin-bottom: 0.9rem;
   overflow: visible;
-  padding-bottom: 0.08em;
+  padding-bottom: 0.12em;
 }
 
 .section-head p {
   color: var(--mist);
   font-size: 1.02rem;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 .reveal {
@@ -440,17 +456,17 @@ textarea {
   font-family: var(--font-display);
   font-size: clamp(1.2rem, 2.2vw, 1.45rem);
   font-weight: 700;
-  line-height: 1.3;
+  line-height: var(--display-leading);
   letter-spacing: -0.02em;
   color: var(--paper);
   overflow: visible;
-  padding-bottom: 0.06em;
+  padding-bottom: 0.1em;
 }
 
 .service-row p {
   color: var(--mist);
   max-width: 48ch;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 .quote-block {
@@ -468,7 +484,7 @@ textarea {
   margin-bottom: 1.4rem;
   color: var(--paper);
   overflow: visible;
-  padding-bottom: 0.06em;
+  padding-bottom: 0.12em;
 }
 
 .quote-block cite {
@@ -501,16 +517,16 @@ textarea {
   font-family: var(--font-display);
   font-size: clamp(1.75rem, 3.5vw, 2.4rem);
   font-weight: 700;
-  line-height: 1.3;
+  line-height: var(--display-leading);
   letter-spacing: -0.03em;
   margin-bottom: 0.85rem;
   overflow: visible;
-  padding-bottom: 0.08em;
+  padding-bottom: 0.12em;
 }
 
 .cta-band p {
   color: var(--mist);
-  line-height: 1.65;
+  line-height: 1.7;
   margin-bottom: 1.6rem;
 }
 
@@ -528,18 +544,18 @@ textarea {
   font-family: var(--font-display);
   font-size: clamp(2rem, 4.5vw, 3.1rem);
   font-weight: 700;
-  line-height: 1.28;
-  letter-spacing: -0.035em;
+  line-height: var(--display-leading);
+  letter-spacing: -0.03em;
   margin-bottom: 0.95rem;
   overflow: visible;
-  padding-bottom: 0.1em;
+  padding-bottom: 0.14em;
 }
 
 .page-hero p {
   color: var(--mist);
   font-size: 1.05rem;
   max-width: 42ch;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 .prose {
@@ -553,7 +569,7 @@ textarea {
 .prose p {
   color: var(--paper-dim);
   font-size: 1.05rem;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 .services-grid {
@@ -571,17 +587,17 @@ textarea {
   font-family: var(--font-display);
   font-size: 1.35rem;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: var(--display-leading);
   letter-spacing: -0.02em;
   color: var(--paper);
   margin-bottom: 0.7rem;
   overflow: visible;
-  padding-bottom: 0.08em;
+  padding-bottom: 0.12em;
 }
 
 .service-detail p {
   color: var(--mist);
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 .contact-layout {
@@ -606,13 +622,13 @@ textarea {
   font-family: var(--font-display);
   font-size: clamp(1.1rem, 2.2vw, 1.35rem);
   font-weight: 700;
-  line-height: 1.35;
+  line-height: var(--display-leading);
   letter-spacing: -0.02em;
   color: var(--paper);
   word-break: break-word;
   transition: color 0.25s var(--ease);
   border-bottom: 1px solid var(--line-strong);
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.3rem;
 }
 
 .contact-email:hover {
@@ -730,18 +746,18 @@ textarea {
   font-family: var(--font-display);
   font-size: 1.05rem;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: var(--display-leading);
   letter-spacing: -0.02em;
   margin-bottom: 0.55rem;
   color: var(--paper);
   overflow: visible;
-  padding-bottom: 0.06em;
+  padding-bottom: 0.1em;
 }
 
 .process-list p {
   color: var(--mist);
   font-size: 0.92rem;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 .portfolio-packs {
@@ -774,9 +790,9 @@ textarea {
   font-size: clamp(1.55rem, 3vw, 2.1rem);
   font-weight: 700;
   letter-spacing: -0.03em;
-  line-height: 1.28;
+  line-height: var(--display-leading);
   overflow: visible;
-  padding-bottom: 0.08em;
+  padding-bottom: 0.12em;
 }
 
 .pack-count {
@@ -862,10 +878,10 @@ textarea {
   font-family: var(--font-display);
   font-size: 1.02rem;
   font-weight: 700;
-  line-height: 1.35;
+  line-height: var(--display-leading);
   letter-spacing: -0.02em;
   overflow: visible;
-  padding-bottom: 0.04em;
+  padding-bottom: 0.1em;
 }
 
 .track-num {
