@@ -1,7 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <script>
+    if (location.protocol === "http:" && location.hostname !== "127.0.0.1" && location.hostname !== "localhost") {
+      location.replace("https://" + location.host + location.pathname + location.search + location.hash);
+    }
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Contact Cosmic Empire Productions for game and film composition, arrangement, orchestration, and notation.">
   <title>Contact | Cosmic Empire Productions</title>
@@ -59,7 +64,7 @@
           </div>
           <div class="field">
             <label for="subject">Subject</label>
-            <input id="subject" name="subject" type="text" placeholder="Game score, film cue, notation…">
+            <input id="subject" name="subject" type="text" placeholder="Game score, film cue, notationâ€¦">
           </div>
           <div class="field">
             <label for="message">Message</label>

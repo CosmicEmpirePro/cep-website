@@ -1,9 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <script>
+    if (location.protocol === "http:" && location.hostname !== "127.0.0.1" && location.hostname !== "localhost") {
+      location.replace("https://" + location.host + location.pathname + location.search + location.hash);
+    }
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Music portfolio from Cosmic Empire Productions — scores and cues for game and film.">
+  <meta name="description" content="Music portfolio from Cosmic Empire Productions â€” scores and cues for game and film.">
   <title>Portfolio | Cosmic Empire Productions</title>
   <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/styles.css">
@@ -40,7 +45,7 @@
     <section class="section">
       <div class="section-inner portfolio-packs">
 
-        <!-- Pack: RPG Game — rename title, swap filenames, duplicate this whole <section> for more packs -->
+        <!-- Pack: RPG Game â€” rename title, swap filenames, duplicate this whole <section> for more packs -->
         <section class="pack reveal" aria-labelledby="pack-rpg">
           <header class="pack-head">
             <div>
@@ -63,7 +68,7 @@
               <div class="track-progress">
                 <span class="track-time track-current">0:00</span>
                 <input type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek Title">
-                <span class="track-time track-duration">—:—</span>
+                <span class="track-time track-duration">â€”:â€”</span>
               </div>
             </article>
 
@@ -80,7 +85,7 @@
               <div class="track-progress">
                 <span class="track-time track-current">0:00</span>
                 <input type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek Open Fields">
-                <span class="track-time track-duration">—:—</span>
+                <span class="track-time track-duration">â€”:â€”</span>
               </div>
             </article>
 
@@ -97,7 +102,7 @@
               <div class="track-progress">
                 <span class="track-time track-current">0:00</span>
                 <input type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek Tinkerer's Workshop">
-                <span class="track-time track-duration">—:—</span>
+                <span class="track-time track-duration">â€”:â€”</span>
               </div>
             </article>
 
@@ -114,7 +119,7 @@
               <div class="track-progress">
                 <span class="track-time track-current">0:00</span>
                 <input type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek Ride">
-                <span class="track-time track-duration">—:—</span>
+                <span class="track-time track-duration">â€”:â€”</span>
               </div>
             </article>
 
@@ -131,7 +136,7 @@
               <div class="track-progress">
                 <span class="track-time track-current">0:00</span>
                 <input type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek Antagonist Introduction">
-                <span class="track-time track-duration">—:—</span>
+                <span class="track-time track-duration">â€”:â€”</span>
               </div>
             </article>
 
@@ -148,7 +153,7 @@
               <div class="track-progress">
                 <span class="track-time track-current">0:00</span>
                 <input type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek Boss Fight">
-                <span class="track-time track-duration">—:—</span>
+                <span class="track-time track-duration">â€”:â€”</span>
               </div>
             </article>
 
@@ -165,7 +170,7 @@
               <div class="track-progress">
                 <span class="track-time track-current">0:00</span>
                 <input type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek Boss Fight (Longer)">
-                <span class="track-time track-duration">—:—</span>
+                <span class="track-time track-duration">â€”:â€”</span>
               </div>
             </article>
           </div>
@@ -177,7 +182,7 @@
     <section class="cta-band">
       <div class="reveal">
         <h2>Want music like this for your project?</h2>
-        <p>Share a brief or reference reel and we’ll talk scope and timeline.</p>
+        <p>Share a brief or reference reel and weâ€™ll talk scope and timeline.</p>
         <a class="btn btn-primary" href="contact.html">Start a project</a>
       </div>
     </section>

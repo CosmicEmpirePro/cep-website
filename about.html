@@ -1,9 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <script>
+    if (location.protocol === "http:" && location.hostname !== "127.0.0.1" && location.hostname !== "localhost") {
+      location.replace("https://" + location.host + location.pathname + location.search + location.hash);
+    }
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About Cosmic Empire Productions — composition, arrangement, orchestration, and notation for game and film.">
+  <meta name="description" content="About Cosmic Empire Productions â€” composition, arrangement, orchestration, and notation for game and film.">
   <title>About | Cosmic Empire Productions</title>
   <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/styles.css">

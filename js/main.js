@@ -1,4 +1,16 @@
 (function () {
+  // Force HTTPS on the live domain (keeps local preview on http://127.0.0.1)
+  if (
+    location.protocol === "http:" &&
+    location.hostname !== "127.0.0.1" &&
+    location.hostname !== "localhost"
+  ) {
+    location.replace(
+      "https://" + location.host + location.pathname + location.search + location.hash
+    );
+    return;
+  }
+
   const STORAGE_KEY = "cep-player-v1";
 
   const header = document.querySelector(".site-header");
