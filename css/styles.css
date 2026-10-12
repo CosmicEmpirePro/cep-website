@@ -386,9 +386,11 @@ textarea {
   font-family: var(--font-display);
   font-size: clamp(1.75rem, 3.5vw, 2.45rem);
   font-weight: 700;
-  line-height: 1.12;
+  line-height: 1.22;
   letter-spacing: -0.03em;
   margin-bottom: 0.75rem;
+  overflow: visible;
+  padding-bottom: 0.05em;
 }
 
 .section-head p {
@@ -513,9 +515,11 @@ textarea {
   font-family: var(--font-display);
   font-size: clamp(2rem, 4.5vw, 3.1rem);
   font-weight: 700;
-  line-height: 1.08;
+  line-height: 1.2;
   letter-spacing: -0.035em;
   margin-bottom: 0.75rem;
+  overflow: visible;
+  padding-bottom: 0.05em;
 }
 
 .page-hero p {
