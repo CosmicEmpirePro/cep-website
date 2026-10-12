@@ -255,18 +255,55 @@ textarea {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse 70% 45% at 50% 0%, rgba(184, 168, 144, 0.08), transparent 55%),
-    radial-gradient(ellipse 50% 40% at 100% 100%, rgba(28, 28, 30, 0.9), transparent 50%),
-    linear-gradient(180deg, #0b0b0c 0%, #121214 50%, #0b0b0c 100%);
+  background-color: #0b0b0c;
+  background-image:
+    linear-gradient(180deg, rgba(11, 11, 12, 0.72) 0%, rgba(11, 11, 12, 0.55) 45%, rgba(11, 11, 12, 0.82) 100%),
+    radial-gradient(ellipse 70% 45% at 50% 0%, rgba(184, 168, 144, 0.1), transparent 55%),
+    url("../assets/images/hero-studio.jpg");
+  background-size: cover;
+  background-position: center 40%;
   z-index: 0;
+  transform-origin: center center;
+  animation: hero-drift 32s var(--ease) infinite alternate;
 }
 
 .hero-vignette {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at center, transparent 35%, rgba(11, 11, 12, 0.7) 100%);
+  background: radial-gradient(ellipse at center, transparent 30%, rgba(11, 11, 12, 0.78) 100%);
   z-index: 1;
+  pointer-events: none;
+}
+
+.visual-band {
+  position: relative;
+  min-height: clamp(15rem, 40vw, 26rem);
+  overflow: hidden;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--ink);
+}
+
+.visual-band img {
+  width: 100%;
+  height: 100%;
+  min-height: clamp(15rem, 40vw, 26rem);
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transform: scale(1.02);
+  transition: transform 1.2s var(--ease);
+}
+
+.visual-band:hover img {
+  transform: scale(1.05);
+}
+
+.visual-band::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(11, 11, 12, 0.28) 0%, rgba(11, 11, 12, 0.45) 100%);
   pointer-events: none;
 }
 
@@ -1239,6 +1276,15 @@ body.is-navigating main {
   }
 }
 
+@keyframes hero-drift {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.06);
+  }
+}
+
 @media (max-width: 760px) {
   .nav-toggle {
     display: inline-flex;
@@ -1292,10 +1338,17 @@ body.is-navigating main {
   .hero-brand,
   .hero-line,
   .hero-actions,
-  .reveal {
+  .reveal,
+  .hero-bg {
     opacity: 1;
     transform: none;
     animation: none;
+    transition: none;
+  }
+
+  .visual-band img,
+  .visual-band:hover img {
+    transform: none;
     transition: none;
   }
 }
