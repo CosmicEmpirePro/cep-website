@@ -72,6 +72,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html {
+  /* Avoid overflow-x on body — it forces overflow-y to auto and clips descenders */
+  overflow-x: clip;
+}
+
 body {
   font-family: var(--font-body);
   font-weight: 400;
@@ -79,7 +84,7 @@ body {
   background: var(--ink);
   line-height: 1.7;
   min-height: 100vh;
-  overflow-x: clip;
+  overflow: visible;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -418,7 +423,8 @@ textarea {
 
 .reveal.is-visible {
   opacity: 1;
-  transform: translateY(0);
+  /* Use none (not translateY(0)) so transform doesn't keep a containing block that clips descenders */
+  transform: none;
 }
 
 .services-preview {
@@ -1217,9 +1223,17 @@ body.is-navigating main {
 }
 
 @keyframes rise {
-  to {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  99% {
     opacity: 1;
     transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
   }
 }
 
