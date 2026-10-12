@@ -558,9 +558,12 @@ textarea {
   font-family: var(--font-display);
   font-size: 1.35rem;
   font-weight: 700;
+  line-height: 1.25;
   letter-spacing: -0.02em;
   color: var(--paper);
   margin-bottom: 0.55rem;
+  overflow: visible;
+  padding-bottom: 0.06em;
 }
 
 .service-detail p {
