@@ -148,7 +148,7 @@ textarea {
   font-size: 0.92rem;
   font-weight: 700;
   letter-spacing: -0.02em;
-  line-height: 1.2;
+  line-height: 1.3;
   white-space: nowrap;
 }
 
@@ -277,9 +277,11 @@ textarea {
   font-family: var(--font-display);
   font-weight: 700;
   font-size: clamp(2.5rem, 7.5vw, 5rem);
-  line-height: 0.98;
+  line-height: 1.12;
   letter-spacing: -0.045em;
   margin-bottom: 1.15rem;
+  overflow: visible;
+  padding-bottom: 0.06em;
   opacity: 0;
   transform: translateY(24px);
   animation: rise 1s var(--ease) 0.15s forwards;
@@ -386,16 +388,17 @@ textarea {
   font-family: var(--font-display);
   font-size: clamp(1.75rem, 3.5vw, 2.45rem);
   font-weight: 700;
-  line-height: 1.22;
+  line-height: 1.3;
   letter-spacing: -0.03em;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.9rem;
   overflow: visible;
-  padding-bottom: 0.05em;
+  padding-bottom: 0.08em;
 }
 
 .section-head p {
   color: var(--mist);
   font-size: 1.02rem;
+  line-height: 1.65;
 }
 
 .reveal {
@@ -437,13 +440,17 @@ textarea {
   font-family: var(--font-display);
   font-size: clamp(1.2rem, 2.2vw, 1.45rem);
   font-weight: 700;
+  line-height: 1.3;
   letter-spacing: -0.02em;
   color: var(--paper);
+  overflow: visible;
+  padding-bottom: 0.06em;
 }
 
 .service-row p {
   color: var(--mist);
   max-width: 48ch;
+  line-height: 1.65;
 }
 
 .quote-block {
@@ -457,9 +464,11 @@ textarea {
   font-size: clamp(1.2rem, 2.5vw, 1.55rem);
   font-weight: 500;
   letter-spacing: -0.02em;
-  line-height: 1.45;
+  line-height: 1.55;
   margin-bottom: 1.4rem;
   color: var(--paper);
+  overflow: visible;
+  padding-bottom: 0.06em;
 }
 
 .quote-block cite {
@@ -492,12 +501,16 @@ textarea {
   font-family: var(--font-display);
   font-size: clamp(1.75rem, 3.5vw, 2.4rem);
   font-weight: 700;
+  line-height: 1.3;
   letter-spacing: -0.03em;
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.85rem;
+  overflow: visible;
+  padding-bottom: 0.08em;
 }
 
 .cta-band p {
   color: var(--mist);
+  line-height: 1.65;
   margin-bottom: 1.6rem;
 }
 
@@ -515,18 +528,18 @@ textarea {
   font-family: var(--font-display);
   font-size: clamp(2rem, 4.5vw, 3.1rem);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.28;
   letter-spacing: -0.035em;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.95rem;
   overflow: visible;
-  padding-bottom: 0.05em;
+  padding-bottom: 0.1em;
 }
 
 .page-hero p {
   color: var(--mist);
   font-size: 1.05rem;
   max-width: 42ch;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 .prose {
@@ -558,12 +571,12 @@ textarea {
   font-family: var(--font-display);
   font-size: 1.35rem;
   font-weight: 700;
-  line-height: 1.25;
+  line-height: 1.35;
   letter-spacing: -0.02em;
   color: var(--paper);
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.7rem;
   overflow: visible;
-  padding-bottom: 0.06em;
+  padding-bottom: 0.08em;
 }
 
 .service-detail p {
@@ -593,12 +606,13 @@ textarea {
   font-family: var(--font-display);
   font-size: clamp(1.1rem, 2.2vw, 1.35rem);
   font-weight: 700;
+  line-height: 1.35;
   letter-spacing: -0.02em;
   color: var(--paper);
   word-break: break-word;
   transition: color 0.25s var(--ease);
   border-bottom: 1px solid var(--line-strong);
-  padding-bottom: 0.15rem;
+  padding-bottom: 0.25rem;
 }
 
 .contact-email:hover {
@@ -716,15 +730,18 @@ textarea {
   font-family: var(--font-display);
   font-size: 1.05rem;
   font-weight: 700;
+  line-height: 1.35;
   letter-spacing: -0.02em;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.55rem;
   color: var(--paper);
+  overflow: visible;
+  padding-bottom: 0.06em;
 }
 
 .process-list p {
   color: var(--mist);
   font-size: 0.92rem;
-  line-height: 1.55;
+  line-height: 1.65;
 }
 
 .portfolio-packs {
@@ -757,7 +774,9 @@ textarea {
   font-size: clamp(1.55rem, 3vw, 2.1rem);
   font-weight: 700;
   letter-spacing: -0.03em;
-  line-height: 1.1;
+  line-height: 1.28;
+  overflow: visible;
+  padding-bottom: 0.08em;
 }
 
 .pack-count {
@@ -843,7 +862,10 @@ textarea {
   font-family: var(--font-display);
   font-size: 1.02rem;
   font-weight: 700;
+  line-height: 1.35;
   letter-spacing: -0.02em;
+  overflow: visible;
+  padding-bottom: 0.04em;
 }
 
 .track-num {
