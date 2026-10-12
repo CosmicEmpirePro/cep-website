@@ -1,42 +1,18 @@
-COSMIC EMPIRE PRODUCTIONS — WEBSITE (FLASH DRIVE)
-================================================
+COSMIC EMPIRE PRODUCTIONS — WEBSITE
+===================================
 
-This is a fully offline website. No install. No internet required.
+Full instructions:  how-to-run.md
 
-HOW TO OPEN ON ANY PC
----------------------
-1. Plug in the flash drive.
-2. Open this folder.
-3. Double-click:  index.html
-4. It will open in your default browser (Chrome, Edge, Firefox, etc.).
+QUICK START
+-----------
+• Browse pages:     double-click index.html
+• Portfolio audio:  double-click START-PREVIEW.bat
+                    then open http://127.0.0.1:8770/portfolio.html
 
-For Portfolio audio (large WAV files), prefer:
-  Double-click START-PREVIEW.bat
-  then open http://127.0.0.1:8770/portfolio.html
+Live site: https://CosmicEmpireProduction.com
 
-Navigate with Home, About, Services, Portfolio, and Contact in the top menu.
+FLASH DRIVE
+-----------
+Copy this entire folder (keep css, js, and assets with the HTML files).
 
-CONTACT FORM
-------------
-The contact form opens a draft in the PC's email app addressed to:
-cosmicempireproductions@gmail.com
-
-If the PC has no email app set up, use that address directly instead.
-
-COPYING TO A FLASH DRIVE
-------------------------
-Copy the entire "Website" folder (keep all files and subfolders together).
-Do not move index.html out by itself — css, js, and assets must stay beside it.
-
-FOLDER CONTENTS
----------------
-index.html      Home
-about.html      About
-services.html   Services
-portfolio.html  Portfolio (music players)
-contact.html    Contact
-css/            Styles
-js/             Navigation + form + players
-assets/         Logo, fonts, and audio/
-assets/audio/   Drop your MP3/WAV tracks here
-START-HERE.txt  This file
+Contact: cosmicempireproductions@gmail.com

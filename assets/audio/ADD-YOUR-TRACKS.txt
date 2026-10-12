@@ -16,13 +16,8 @@ Display titles on the page can still have spaces ("Open Fields").
 
 PREVIEWING LOCALLY
 ------------------
-Because these WAVs are large, use the included preview server
-(double-click START-PREVIEW.bat), then open:
-
-  http://127.0.0.1:8770/portfolio.html
-
-That server supports concurrent streams + HTTP Range requests
-so tracks do not block each other.
+See how-to-run.md. Short version: double-click START-PREVIEW.bat,
+then open http://127.0.0.1:8770/portfolio.html
 
 TO ADD ANOTHER PACK
 1. Create a folder under assets/audio/

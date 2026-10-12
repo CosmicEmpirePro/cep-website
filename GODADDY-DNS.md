@@ -1,61 +1,45 @@
-# GoDaddy DNS — final step for CosmicEmpireProduction.com
+# GoDaddy DNS — CosmicEmpireProduction.com
 
-Hosting is already set up on GitHub Pages.
+Hosting: **GitHub Pages** (`CosmicEmpirePro/cep-website`, branch `main`).  
+Live: https://CosmicEmpireProduction.com
 
-Temporary live site (works now):
-https://cosmicempirepro.github.io/cep-website/index.html
-
-To finish your custom domain today, update DNS in GoDaddy.
+Keep these records in GoDaddy → Domains → CosmicEmpireProduction.com → DNS.
 
 ---
 
-## Exact records to add in GoDaddy
-
-Go to: **GoDaddy → Domains → CosmicEmpireProduction.com → DNS**
-
-### 1) Root domain (`@` / CosmicEmpireProduction.com)
-
-Add these **A** records (GitHub Pages):
+## Root domain (`@`)
 
 | Type | Name | Value | TTL |
 |------|------|-------|-----|
-| A | `@` | `185.199.108.153` | 600 seconds / 1 Hour |
-| A | `@` | `185.199.109.153` | 600 seconds / 1 Hour |
-| A | `@` | `185.199.110.153` | 600 seconds / 1 Hour |
-| A | `@` | `185.199.111.153` | 600 seconds / 1 Hour |
+| A | `@` | `185.199.108.153` | 1 Hour |
+| A | `@` | `185.199.109.153` | 1 Hour |
+| A | `@` | `185.199.110.153` | 1 Hour |
+| A | `@` | `185.199.111.153` | 1 Hour |
 
-### 2) www subdomain
+## www
 
 | Type | Name | Value | TTL |
 |------|------|-------|-----|
-| CNAME | `www` | `cosmicempirepro.github.io` | 600 seconds / 1 Hour |
+| CNAME | `www` | `cosmicempirepro.github.io` | 1 Hour |
 
 ---
 
-## Cleanup first (important)
-
-In GoDaddy DNS / domain settings, remove or disable:
+## Do not re-enable
 
 - Website forwarding / masking
 - Parking page
-- Old A/CNAME records that conflict with the ones above
-- Any “GoDaddy Website Builder” connection
+- GoDaddy Website Builder connection
+- Extra A/CNAME records that conflict with the ones above
 
-Keep only the records needed for email (MX) if you use GoDaddy email.
-
----
-
-## After saving DNS
-
-1. Wait 15–60 minutes (sometimes up to 24 hours).
-2. Visit:
-   - https://CosmicEmpireProduction.com
-   - https://www.CosmicEmpireProduction.com
-3. In GitHub repo → Settings → Pages, confirm domain shows as verified.
-4. Enable **Enforce HTTPS** if GitHub shows that button.
+Keep MX records if you use GoDaddy email.
 
 ---
 
-## Done when
+## HTTPS
 
-`https://CosmicEmpireProduction.com` loads the Cosmic Empire site with a padlock.
+In GitHub → repo → **Settings → Pages**:
+
+1. Confirm custom domain `cosmicempireproduction.com` is verified.
+2. Enable **Enforce HTTPS** once the certificate is ready.
+
+If the PC cannot resolve the domain but a phone can, the local DNS (router) may be stale — use `8.8.8.8` / `1.1.1.1` or wait for propagation.
