@@ -23,26 +23,19 @@
 }
 
 @font-face {
-  font-family: "Syne";
-  src: url("../assets/fonts/syne-500.woff2?v=2") format("woff2");
+  font-family: "Space Grotesk";
+  src: url("../assets/fonts/space-grotesk-500.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-  /* Syne ink extends past default metrics — keep descenders visible */
-  ascent-override: 90%;
-  descent-override: 40%;
-  line-gap-override: 0%;
 }
 
 @font-face {
-  font-family: "Syne";
-  src: url("../assets/fonts/syne-700.woff2?v=2") format("woff2");
+  font-family: "Space Grotesk";
+  src: url("../assets/fonts/space-grotesk-700.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  ascent-override: 90%;
-  descent-override: 40%;
-  line-gap-override: 0%;
 }
 
 :root {
@@ -58,9 +51,9 @@
   --accent-deep: #7a6f5c;
   --line: rgba(236, 234, 230, 0.1);
   --line-strong: rgba(236, 234, 230, 0.16);
-  --font-display: "Syne", "Segoe UI", Candara, sans-serif;
+  --font-display: "Space Grotesk", "Segoe UI", Candara, sans-serif;
   --font-body: "Outfit", "Segoe UI", Candara, sans-serif;
-  --display-leading: 1.5;
+  --display-leading: 1.25;
   --nav-h: 4rem;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --radius: 0.5rem;
